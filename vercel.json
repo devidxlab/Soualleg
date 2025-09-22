@@ -1,17 +1,17 @@
 {
   "functions": {
-    "src/server/index.js": {
+    "api/index.js": {
       "maxDuration": 30
     }
   },
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "/src/server/index.js"
+      "destination": "/api/index.js"
     },
     {
       "source": "/uploads/:path*",
-      "destination": "/src/server/index.js"
+      "destination": "/api/index.js"
     }
   ]
 }
